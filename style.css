@@ -1,0 +1,125 @@
+* {
+     box-sizing: border-box;
+     margin: 0px;
+     border: 0px;
+     padding: 0px;
+}
+
+form {
+     max-width: 436px;
+     padding: 50px;
+}
+
+.field {
+     display: block;
+     margin-bottom: 20px;
+}
+
+.field_tittle {
+     color: #6F7482;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 144%;
+     letter-spacing: 0.16px;
+     margin-bottom: 2px;
+}
+
+.field_input {
+     width: 100%;
+     outline: 0;
+     padding: 12px;
+
+     color: rgb(184, 0, 116);
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 144%;
+     letter-spacing: 0.16px;
+}
+
+.field_input::placeholder {
+     color: #B8BCCA;
+}
+
+.field_textarea {
+     resize: vertical;
+     min-height: 50px;
+     max-height: 200px;
+}
+
+.radio {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     margin-bottom: 10px;
+}
+
+.radio_input {
+     display: none;
+}
+.radio_input:checked ~ .radio_box .radio_circle {
+     transform: scale(1);
+}
+
+.radio_box {
+     width: 24px;
+     height: 24px;
+     border-radius: 50%;
+     border: 2px solid rgb(184, 0, 116);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio_circle {
+     width: 12px;
+     height: 12px;
+     border-radius: 50%;
+     background:rgb(184, 0, 116);
+     transform: scale(0);
+     transition: 0.5s all ease-in-out;
+}
+
+.radio_text {
+     color: #3B4256;
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 140%;
+}
+
+.switch {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     margin-bottom: 10px;
+}
+
+.switch_input {
+display: none;
+}
+
+.switch_input:checked ~ .switch_box .switch_circle {
+     transform: translateX(20px);
+     background-color: rgb(184, 0, 116);
+}
+
+.switch_box {
+     width: 51px;
+     height: 31px;
+     border-radius:16px;
+     background-color: #d4c1cf;
+     display: flex;
+    align-items: center;
+    padding: 3px;
+    
+}
+
+.switch_circle {
+     width: 25px;
+     height: 25px;
+     border-radius:16px;
+     background-color: white;
+     transform: translateX(0px);
+     transition: 1s all ease-in-out;
+}
+
+
