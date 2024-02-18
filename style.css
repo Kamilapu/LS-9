@@ -103,7 +103,7 @@ display: none;
 
 .switch_input:checked ~ .switch_box {
      background-color: rgb(184, 0, 116);
-     transition: .2s all ease-in-out;
+     transition: .3s all ease-in-out;
 }
 
 .switch_box {
