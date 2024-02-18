@@ -99,7 +99,11 @@ display: none;
 
 .switch_input:checked ~ .switch_box .switch_circle {
      transform: translateX(20px);
+}
+
+.switch_input:checked ~ .switch_box {
      background-color: rgb(184, 0, 116);
+     transition: .2s all ease-in-out;
 }
 
 .switch_box {
